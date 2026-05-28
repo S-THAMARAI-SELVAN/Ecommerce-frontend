@@ -2,7 +2,11 @@ import axios from 'axios';
 
 // Base API configuration (Vite proxy redirects /api requests to Express server)
 const api = axios.create({
-  baseURL: '',
+  baseURL: typeof window !== 'undefined' && 
+    window.location.hostname !== 'localhost' && 
+    window.location.hostname !== '127.0.0.1'
+      ? 'https://ecommerce-backend-1-hyf8.onrender.com'
+      : '',
   headers: {
     'Content-Type': 'application/json',
   },
