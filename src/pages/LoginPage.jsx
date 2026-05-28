@@ -150,67 +150,7 @@ const LoginPage = () => {
           </Link>
         </div>
 
-        {/* Demo Credentials Box */}
-        <div className="glass-panel" style={{
-          marginTop: '32px',
-          padding: '16px 20px',
-          background: 'var(--bg-primary)',
-          fontSize: '0.8rem',
-          color: 'var(--text-secondary)',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '8px'
-        }}>
-          <div style={{ fontWeight: 600, color: 'var(--text-primary)' }}>Demo Sandbox Access (Click to auto-fill):</div>
-          
-          <button 
-            type="button"
-            onClick={() => {
-              setEmail('admin@ecommerce.com');
-              setPassword('password123');
-            }}
-            style={{ 
-              textAlign: 'left', 
-              background: 'rgba(255,255,255,0.05)', 
-              border: '1px solid rgba(0,0,0,0.05)', 
-              padding: '6px 10px', 
-              borderRadius: '4px', 
-              cursor: 'pointer',
-              display: 'block',
-              width: '100%',
-              fontSize: '0.8rem',
-              color: 'inherit'
-            }}
-            onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(0,0,0,0.03)'}
-            onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'}
-          >
-            <strong>Admin:</strong> <code>admin@ecommerce.com</code> / <code>password123</code>
-          </button>
-          
-          <button 
-            type="button"
-            onClick={() => {
-              setEmail('john@example.com');
-              setPassword('password123');
-            }}
-            style={{ 
-              textAlign: 'left', 
-              background: 'rgba(255,255,255,0.05)', 
-              border: '1px solid rgba(0,0,0,0.05)', 
-              padding: '6px 10px', 
-              borderRadius: '4px', 
-              cursor: 'pointer',
-              display: 'block',
-              width: '100%',
-              fontSize: '0.8rem',
-              color: 'inherit'
-            }}
-            onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(0,0,0,0.03)'}
-            onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'}
-          >
-            <strong>User:</strong> <code>john@example.com</code> / <code>password123</code>
-          </button>
-        </div>
+
       </div>
     </main>
   );
